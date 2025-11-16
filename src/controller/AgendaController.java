@@ -8,21 +8,22 @@ import java.util.ArrayList;
 import model.Agenda;
 
 public class AgendaController {
-    private ArrayList<Agenda> listAgenda = new ArrayList<>();
 
-    public void tambah(Agenda ag) {
-        listAgenda.add(ag);
+    private ArrayList<Agenda> data = new ArrayList<>();
+
+    public void tambah(Agenda a) {
+        data.add(a);
     }
 
-    public void edit(int index, Agenda ag) {
-        listAgenda.set(index, ag);
+    public void edit(int index, Agenda a) {
+        data.set(index, a);
     }
 
     public void hapus(int index) {
-        listAgenda.remove(index);
+        data.remove(index);
     }
 
     public ArrayList<Agenda> getData() {
-        return listAgenda;
+        return data;
     }
 }
